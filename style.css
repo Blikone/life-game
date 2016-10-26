@@ -1,0 +1,22 @@
+/**{
+    outline: 1px solid red
+}*/
+
+.game-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.square{
+    width: 19%;
+    padding-bottom: 19%;
+    background-color: #aaa;
+    outline: 1px solid #666
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: #c00000;
+}

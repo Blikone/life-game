@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="header">
+		<h1>The Game of Life: <strong>Life-Genesis</strong></h1>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-6 col-xs-offset-3">
+				<div class="game-grid 5x5" oncontextmenu="return false">
+					<div class="square" id="row-1-col-1"></div>
+					<div class="square" id="row-1-col-2"></div>
+					<div class="square" id="row-1-col-3"></div>
+					<div class="square" id="row-1-col-4"></div>
+					<div class="square" id="row-1-col-5"></div>
+					<div class="square" id="row-2-col-1"></div>
+					<div class="square" id="row-2-col-2"></div>
+					<div class="square" id="row-2-col-3"></div>
+					<div class="square" id="row-2-col-4"></div>
+					<div class="square" id="row-2-col-5"></div>
+					<div class="square" id="row-3-col-1"></div>
+					<div class="square" id="row-3-col-2"></div>
+					<div class="square" id="row-3-col-3"></div>
+					<div class="square" id="row-3-col-4"></div>
+					<div class="square" id="row-3-col-5"></div>
+					<div class="square" id="row-4-col-1"></div>
+					<div class="square" id="row-4-col-2"></div>
+					<div class="square" id="row-4-col-3"></div>
+					<div class="square" id="row-4-col-4"></div>
+					<div class="square" id="row-4-col-5"></div>
+					<div class="square" id="row-5-col-1"></div>
+					<div class="square" id="row-5-col-2"></div>
+					<div class="square" id="row-5-col-3"></div>
+					<div class="square" id="row-5-col-4"></div>
+					<div class="square" id="row-5-col-5"></div>
+				</div>
+			</div>
+            <div class="col-xs-2">
+                <button class="iterate">Iterate!</button>
+            </div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<!--grid
+    each cell has a concatenated id="row00-col00" up to "row50-col50"
+    radio selector to set number of players as 0, 1, or 2.  Appears on page start as an alert.  How to CSS an alert?
+
+
+    Write 0 players first (just logic)
+    Write 2 players next (gameplay functionality)
+    Lastly write 1 player (AI rules in that file)-->
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="logic.js"></script>
+	<script src="computer-ai.js"></script>
+	<script src="game-controller.js"></script>
+</body>
+
+</html>
