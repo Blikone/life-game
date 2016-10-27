@@ -15,8 +15,9 @@ function gameController() {
                 console.log(id + ": " + neighborColors[0] + " cells");
                 var blue = neighborColors[0];
                 var red = neighborColors[1];
-                var oldClass = cell.className;
-                var newClass;
+                var oldClass = cell.className.split(' ').join('-');
+                console.log(oldClass + " " + typeof(oldClass));
+                var newClass = 'square';
                 switch (blue + red) {
                     case 0:
                     case 1:
@@ -25,20 +26,19 @@ function gameController() {
                     case 6:
                     case 7:
                     case 8:
-                        newClass = 'square';
                         break;
                     case 2:
-                        newClass = oldClass;
+                        newClass = oldClass.split('-').join(' ');
                         break;
                     case 3:
-                        if (oldClass = 'square') {
+                        if (oldClass === 'square') {
                             if (blue > red) {
                                 newClass = 'square blue';
                             } else {
                                 newClass = 'square red';
                             }
                         } else {
-                            newClass = oldClass;
+                            newClass = oldClass.split('-').join(' ');
                         }
                         break;
                 }
