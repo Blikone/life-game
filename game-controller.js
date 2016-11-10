@@ -31,14 +31,16 @@ function gameController() {
                         newClass = oldClass.split('-').join(' ');
                         break;
                     case 3:
-                        if (oldClass === 'square') {
+                        if (oldClass === 'square-blue') {
+                            newClass = 'square blue';
+                        } else if (oldClass === 'square-red') {
+                            newClass = 'square red';
+                        } else if (oldClass === 'square') {
                             if (blue > red) {
                                 newClass = 'square blue';
                             } else {
                                 newClass = 'square red';
                             }
-                        } else {
-                            newClass = oldClass.split('-').join(' ');
                         }
                         break;
                 }
