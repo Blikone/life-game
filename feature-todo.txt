@@ -1,0 +1,10 @@
+Write alerts to set size and difficulty of board
+
+Initialize game by placing random cells on the board
+
+"Reset Game" and "Change Game" buttons.
+    Reset wipes board and news up new version of current game.
+    Change wipes board and reruns size and difficulty selector alerts.
+
+incrementTurn() to be run at the end of each click run, with a Switch to flip color and function of click.
+    

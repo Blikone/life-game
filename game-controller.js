@@ -8,7 +8,7 @@ function gameController() {
         var template = '';
         for (var row = 1; row <= side; row++) {
             for (var col = 1; col <= side; col++) {
-                debugger;
+                // debugger;
                 var id = 'row-' + row + '-col-' + col;
                 var cell = document.getElementById(id);
                 var neighborColors = gameLogic.checkNeighbors(row, col, cell, side);
